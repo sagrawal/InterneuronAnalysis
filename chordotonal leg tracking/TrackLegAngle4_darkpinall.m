@@ -24,7 +24,7 @@ MaskFile=dir([FileTag,'*DrawMaskAndBackground.mat']);
 load(MaskFile(1).name);
 
 %find all the videos associated with FileTag
-DataFiles = dir([FileTag, '*.avi']);
+DataFiles = dir([FileTag, '*.mp4']);
 length(DataFiles)
 
 for i = 1:length(DataFiles)
@@ -76,7 +76,7 @@ for i = 1:length(DataFiles)
             LegAngleArea(k, 5) = TestRegion(Index).Orientation;
             LegAngleArea(k, 6) = TestRegion(Index).MajorAxisLength;
             
-            LegAngleArea(LegAngleArea(:,1)>190, 1) = LegAngleArea(LegAngleArea(:,1)>190, 1)-180;
+            LegAngleArea(LegAngleArea(:,1)>185, 1) = LegAngleArea(LegAngleArea(:,1)>185, 1)-180;
             LegAngleArea(:,5) = FemurAngle-LegAngleArea(:, 1);
         end
         

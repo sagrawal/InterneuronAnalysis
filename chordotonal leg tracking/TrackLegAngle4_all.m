@@ -80,7 +80,7 @@ for i = 1:length(DataFiles)
             LegAngleArea(k, 6) = TestRegion(Index).MajorAxisLength;
             
 %             LegAngleArea(LegAngleArea(:,1)<0, 1) = LegAngleArea(LegAngleArea(:,1)<0, 1)+180;
-            %LegAngleArea(LegAngleArea(:,1)>177, 1) = LegAngleArea(LegAngleArea(:,1)>177, 1)-180;
+            LegAngleArea(LegAngleArea(:,1)>177, 1) = LegAngleArea(LegAngleArea(:,1)>177, 1)-180;
             LegAngleArea(:,5) = FemurAngle-LegAngleArea(:, 1);
         end
         

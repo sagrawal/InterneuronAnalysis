@@ -2,8 +2,8 @@
 
 clearvars
 
-dataDir = 'G:\My Drive\Sweta to backup\ephysdata\10B recordings\swings\';
-fileTag = '04751_2*flexfirst*WithSwingOnset.mat';
+dataDir = 'E:\Sweta to backup\ephysdata\13B recordings\swings\';
+fileTag = '13b_33_flexfirst_swings*WithSwingOnset.mat';
 dataFiles = dir([dataDir, fileTag]);
 extfirst = 0; %0 means leg starts flexed
 

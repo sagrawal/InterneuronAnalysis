@@ -1,5 +1,5 @@
-movieDir = 'G:\My Drive\Sweta to backup\ephysdata\spontaneous and active movement examples\stuff\';
-fileTag = 'ss28981_36*';
+movieDir = 'E:\Sweta to backup\motortoleg\';
+fileTag = '90deg_90start_*';
 movieFiles = dir([movieDir, fileTag, '.avi']);
 dataFiles = dir([movieDir, fileTag, 'TrackLegAngle4.mat']);
 
@@ -19,7 +19,7 @@ framerate = mov.FrameRate;
 
 %% plot lines on movie frames, make new movie
 fig = figure;
-v = VideoWriter('ss28981_36.avi');
+v = VideoWriter('180deg_0start.avi');
 v.FrameRate = framerate;
 open(v);
 

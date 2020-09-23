@@ -78,7 +78,7 @@ while k<=FramesToRead
         LegAngleArea(k, 5) = TestRegion(Index).Orientation;
         LegAngleArea(k, 6) = TestRegion(Index).MajorAxisLength;
 
-%         LegAngleArea(LegAngleArea(:,1)>200, 1) = LegAngleArea(LegAngleArea(:,1)>200, 1)-180;
+        LegAngleArea(LegAngleArea(:,1)>185, 1) = LegAngleArea(LegAngleArea(:,1)>185, 1)-180;
         LegAngleArea(:,5) = FemurAngle-LegAngleArea(:, 1);
     end
 
